@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Calibri;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        /* Section one */
+        .grey-bg {
+            background-color: #C6C6C6;
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            height: 400px;
+        }
+
+        .blue-bg {
+            background-color: #095169;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            height: 150px;
+            width: 180px;
+        }
+
+        .green-bg {
+            background-color: #0F9386;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            height: 250px;
+            width: 300px;
+        }
+
+        .img-holder {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            height: 330px;
+            background-image: url(1.png);
+            background-size: cover;
+            background-position: bottom center;
+            width: 420px
+        }
+
+        /* Section two */
+        .white-bg {
+            height: 325px;
+            background-color: white;
+            position: relative;
+        }
+
+        .grey-bg-2 {
+            background-color: #C6C6C6;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 250px;
+            z-index: 0;
+            display: flex;
+            justify-content: flex-start;
+            padding-top: 30px;
+        }
+
+        .img-holder-2 {
+            background-image: url(2.png);
+            position: absolute;
+            right: 25px;
+            width: 320px;
+            height: 250px;
+            z-index: 0;
+            bottom: 0;
+            background-size: 100%;
+        }
+
+        .small-img-holder {
+            position: absolute;
+            height: 130px;
+            width: 170px;
+            background-color: #D9D9D9;
+            bottom: 25px;
+            left: 157px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Section three */
+        .white-bg-2 {
+            height: 425px;
+            background-color: white;
+            position: relative;
+        }
+
+        .img-holder-3 {
+            position: absolute;
+            width: 365px;
+            background-image: url("image_bg.jpg");
+            height: 425px;
+            background-position: bottom right;
+        }
+
+        .green-bg-2 {
+            background-color: #0F9386;
+            height: 425px;
+            z-index: 1;
+            position: absolute;
+            width: 210px;
+            right: 25px;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Section four */
+        .white-bg-4 {
+            height: 525px;
+            position: relative;
+        }
+
+        .square-grey-box {
+            background-color: #C6C6C6;
+            position: absolute;
+            height: 95px;
+            width: 95px;
+            top: -55px;
+            right: 0;
+            z-index: 1;
+        }
+
+        .blue-bg-4 {
+            background-color: #095169;
+            position: absolute;
+            height: 245px;
+            width: 204px;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .img-holder-bg-4 {
+            height: 372px;
+            width: 515px;
+            z-index: 0;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-image: url(image_4.jpg);
+            background-size: 100%;
+        }
+
+        .img-holder-4 {
+            height: 125px;
+            width: 385px;
+            position: absolute;
+            right: 0;
+            bottom: 55px;
+            background-color: #F1E6D6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0F9386;
+            height: 70px;
+            position: relative;
+            padding: 50px 20px;
+        }
+
+        .col-blue {
+            background-color: #095169;
+            position: absolute;
+            top: -23px;
+            height: 45px;
+            width: 320px;
+            transform: translateX(-50%);
+            margin-left: 48%;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, serif;
+            letter-spacing: 1px;
+        }
+
+        .col:nth-of-type(2) {
+            width: 30%;
+            float: left;
+            color: white;
+            padding: 0px;
+        }
+
+        .col:nth-of-type(3) {
+            width: 34%;
+            float: left;
+            color: white;
+            padding: 0px;
+        }
+
+        .col:nth-of-type(4) {
+            width: 34%;
+            float: left;
+            color: white;
+            padding: 0px;
+        }
+
+        .title {
+            color: white;
+            font-size: 45px;
+            letter-spacing: 1.5px;
+            line-height: 38px;
+            margin-left: 20px;
+            font-weight: 100
+        }
+
+        .s-text {
+            color: white;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table width="600px">
+            <tr>
+                <td>
+                    <div class="grey-bg">
+                        <div class="green-bg"></div>
+                        <div class="blue-bg" style="text-align:center">
+                            <img src="everest_logo.png" alt="Brand" style="margin-top:20px;">
+                            <img src="boards.png" alt="Brand">
+                        </div>
+                        <div class="img-holder"></div>
+                        <img src="sec1-text.png" alt="text" style="
+                            z-index: 4;
+    position: absolute;
+    right: 34px;
+    height: 115px;
+    width: 125px;
+    bottom: 70px;
+                        ">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;padding:0 40px;font-size:17px;">
+                    <p style="margin:20px 0;">Nestled around the serenity of nature, Club mahindra Ashtamudi Resort
+                        collaborated with Everest
+                        Industries for a renovation project and opened their doors to 22 beautifully crafted floating
+                        villas in Kollam,Kerala</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white-bg">
+                        <div class="grey-bg-2">
+                            <div>
+                                <p class="title" style="color:black;">Mezzanine<br>Flooring</p>
+                                <p class="s-text" style="color:black;margin-top:10px;">For Mezzanine flooring 15mm
+                                    Everest HD<br>boards
+                                    provide reliable
+                                    moisture resistance<br>due to their low moisture content.</p>
+                            </div>
+                        </div>
+                        <div class="img-holder-2"></div>
+                        <div class="small-img-holder"><img src="3.png" alt="" height="75px">
+                            <p style="font-size:9px;margin-top:2px;">HEAVY DUTY MEZZANINE FLOOR</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- Section three -->
+            <tr>
+                <td>
+                    <div class="white-bg-2">
+                        <div class="img-holder-3"></div>
+                        <div class="green-bg-2">
+                            <div>
+                                <p class="title">Wall Lining</p><br>
+                                <p class="s-text">In Wall Lining, the application of
+                                    12 mm Everest HD boards created a secure inner construction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- Section Four -->
+            <tr>
+                <td>
+                    <div class="white-bg-4">
+                        <div class="blue-bg-4">
+                            <div>
+                                <p class="title">Roof Tile Underlay</p><br>
+                                <p class="s-text">For Roof tile Underlay,12MM Everest Boards were used that accentuated
+                                    the resort's outer look and created an inviting ambience</p>
+                            </div>
+                        </div>
+                        <div class="img-holder-bg-4"></div>
+                        <div class="img-holder-4"><img src="wood.png" alt="" height="80px" width="350px">
+                            <h6>ROOFING SINGLES FIXING DETAILS</h6>
+                        </div>
+                        <div class="square-grey-box"></div>
+                    </div>
+                </td>
+            </tr>
+            <!-- Section Five -->
+            <tr>
+                <td>
+                    <div class="footer">
+                        <div class="col-blue">Reimagine Spaces With Us</div>
+                        <div class="col">
+                            <small style="font-size:12px;">EVEREST INDUSTRIES LIMITED</small>
+                            <small style="font-size:12px;font-weight:bolder;">everestind.com</small>
+                        </div>
+                        <div class="col">
+                            <small style="font-size:14px;">Everest Technopolis,<br>D-206,
+                                Sector-63,<br>Noida-201301,Uttar Pradesh,<br>INDIA</small>
+
+                        </div>
+                        <div class="col">
+                            <small style="font-size:15px;">Helpline:<a href="tel:18004191991"
+                                    style="color: white;text-decoration: none;"> &nbsp;
+                                    1800
+                                    419 1991</a></small>
+                            <small style="font-size:14px;">Email:<a href="mailto:info@everestind.com"
+                                    style="color: white;text-decoration: none;"> &nbsp;
+                                    info@everestind.com</a></small>
+                            <p style="margin-top:5px;">
+                                <img src="fb.png" alt="Facebook">
+                                <img src="in.png" alt="Linkedin" style="margin-left: 7px;">
+                                <img src="yt.png" alt="Youtube" style="margin-left: 7px;">
+                                <img src="tweet.png" alt="Twitter" style="margin-left: 7px;">
+                                <img src="insta.png" alt="Instagram" style="margin-left: 7px;">
+                            </p>
+                        </div>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
