@@ -7,285 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
     <title>Emailer</title>
-    <style>
-        able {
-            border-collapse: separate;
-        }
 
-        a,
-        a:link,
-        a:visited {
-            text-decoration: none;
-            color: #00788a;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h2,
-        h2 a,
-        h2 a:visited,
-        h3,
-        h3 a,
-        h3 a:visited,
-        h4,
-        h5,
-        h6,
-        .t_cht {
-            color: #000 !important;
-        }
-
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td {
-            line-height: 100%;
-        }
-
-        .ExternalClass {
-            width: 100%;
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: Calibri;
-        }
-
-        table {
-            border-spacing: 0;
-        }
-
-        .grey-bg {
-            background-color: #C6C6C6;
-            z-index: 0;
-            width: 100%;
-            height: 400px;
-        }
-
-        .blue-bg {
-            background-color: #095169;
-            z-index: 2;
-            height: 150px;
-            width: 180px;
-            margin-left: auto;
-        }
-
-        .green-bg {
-            background-color: #0F9386;
-            z-index: 2;
-            height: 250px;
-            width: 300px;
-            margin-left: 300px;
-            margin-top: -19px;
-        }
-
-        .img-holder {
-            z-index: 3;
-            height: 330px;
-            background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127568/Emailer/1_jon5zf.png);
-            background-size: cover;
-            background-position: bottom center;
-            width: 420px;
-            margin-top: -150px;
-            float: left;
-        }
-
-        .white-bg {
-            height: 325px;
-            background-color: white;
-        }
-
-        .grey-bg-2 {
-            background-color: #C6C6C6;
-            z-index: 0;
-            width: 100%;
-            height: 215px;
-            display: flex;
-            justify-content: flex-start;
-            padding-top: 30px;
-        }
-
-        .img-holder-2 {
-            background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127559/Emailer/2_vovjjw.png);
-            width: 320px;
-            height: 250px;
-            z-index: 0;
-            bottom: 0;
-            background-size: 100%;
-            margin-top: -155px;
-            margin-left: 255px;
-        }
-
-        .small-img-holder {
-            height: 130px;
-            width: 170px;
-            background-color: #D9D9D9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: -175px;
-            margin-left: 160px;
-        }
-
-        .white-bg-2 {
-            height: 425px;
-            background-color: white;
-        }
-
-        .img-holder-3 {
-            width: 365px;
-            background-image: url("https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127553/Emailer/image_bg_fclhgs.jpg");
-            height: 425px;
-            background-position: bottom right;
-            float: left;
-        }
-
-        .green-bg-2 {
-            background-color: #0F9386;
-            height: 425px;
-            z-index: 1;
-            width: 210px;
-            display: flex;
-            align-items: center;
-        }
-
-        .white-bg-4 {
-            height: 505px;
-        }
-
-        .square-grey-box {
-            background-color: #C6C6C6;
-            height: 95px;
-            width: 95px;
-            z-index: 1;
-            margin-left: auto;
-            margin-top: -295px;
-        }
-
-        .blue-bg-4 {
-            background-color: #095169;
-            height: 245px;
-            width: 204px;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 20px;
-            margin-top: -417px;
-        }
-
-        .img-holder-bg-4 {
-            height: 372px;
-            width: 515px;
-            z-index: 0;
-            background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127553/Emailer/image_4_bvp4z8.jpg);
-            background-size: 100%;
-            margin-left: auto;
-            margin-top: 45px;
-        }
-
-        .img-holder-4 {
-            height: 125px;
-            width: 385px;
-            background-color: #F1E6D6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            float: right;
-            margin-top: 305px;
-        }
-
-        .footer {
-            background-color: #0F9386;
-            height: 70px;
-            position: relative;
-            padding: 50px 20px;
-        }
-
-        .col-blue {
-            background-color: #095169;
-            height: 45px;
-            width: 320px;
-            transform: translateX(-50%);
-            margin-left: 48%;
-            font-weight: bolder;
-            color: white;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, Helvetica, serif;
-            letter-spacing: 1px;
-            margin-top: -72px;
-        }
-
-        .col:nth-of-type(2) {
-            width: 30%;
-            float: left;
-            color: white;
-            padding: 0px;
-            margin-top: 15px;
-        }
-
-        .col:nth-of-type(3) {
-            width: 34%;
-            float: left;
-            color: white;
-            padding: 0px;
-            margin-top: 15px;
-        }
-
-        .col:nth-of-type(4) {
-            width: 34%;
-            float: left;
-            color: white;
-            padding: 0px;
-            margin-top: 15px;
-        }
-
-        .title {
-            color: white;
-            font-size: 45px;
-            letter-spacing: 1.5px;
-            line-height: 38px;
-            margin-left: 20px;
-            font-weight: 100
-        }
-
-        .s-text {
-            color: white;
-            font-size: 12px;
-            margin-left: 20px;
-        }
-    </style>
 </head>
 
-<body>
+<body style="margin:0;padding:0;font-family: Calibri;">
     <center>
-        <table width="600px" cellpadding="0" cellspacing="0" border="0">
+        <table width="600px" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0;">
             <tr>
                 <td>
-                    <div class="grey-bg">
-                        <div class="blue-bg" style="text-align:center">
+                    <div class="grey-bg" style="background-color: #C6C6C6;
+                    z-index: 0;
+                    width: 100%;
+                    height: 400px;">
+                        <div class="img-holder" style="z-index: 3;
+                        height: 330px;
+                        background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127568/Emailer/1_jon5zf.png);
+                        background-size: cover;
+                        background-position: bottom center;
+                        width: 420px;
+                        float: left;"></div>
+                        <div class="blue-bg" style="text-align:center;background-color: #095169;
+                        z-index: 2;
+                        height: 150px;
+                        width: 180px;
+                        margin-left: auto;">
                             <img src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127554/Emailer/everest_logo_p2rhfx.png"
                                 alt="Brand" style="margin-top:20px;">
                             <img src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127554/Emailer/boards_txkrzm.png"
                                 alt="Brand">
                         </div>
-                        <div class="img-holder"></div>
-                        <img src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127551/Emailer/sec1-text_vafsrh.png"
-                            alt="text" style="
+
+                        <div class="green-bg" style="background-color: #0F9386;
+                        z-index: 2;
+                        height: 250px;
+                        width: 300px;
+                        margin-left: 300px;"><img
+                                src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127551/Emailer/sec1-text_vafsrh.png"
+                                alt="text" style="
                             z-index: 5;
     height: 115px;
     width: 125px;
-    margin-bottom: -165px;
+    margin-top:66px;
     margin-left: 15px;
-                            ">
-                        <div class="green-bg"></div>
+                            "></div>
                     </div>
                 </td>
             </tr>
@@ -299,33 +63,79 @@
             </tr>
             <tr>
                 <td>
-                    <div class="white-bg">
-                        <div class="grey-bg-2">
-                            <div>
-                                <p class="title" style="color:black;">Mezzanine<br>Flooring</p>
-                                <p class="s-text" style="color:black;margin-top:10px;">For Mezzanine flooring 15mm
-                                    Everest HD<br>boards
+                    <div class="white-bg" style="height: 325px;
+                    background-color: white;">
+                        <div class="grey-bg-2" style="background-color: #C6C6C6;
+                        z-index: 0;
+                        width: 100%;
+                        height: 215px;
+                        display: flex;
+                        justify-content: flex-start;
+                        padding-top: 30px;">
+                            <div style="width: 230px;">
+                                <p class="title" style="color:black;
+                                margin-top:0;
+                                margin-bottom:0;
+                                font-size: 45px;
+                                letter-spacing: 1.5px;
+                                line-height: 38px;
+                                margin-left: 20px;
+                                font-weight: 100">Mezzanine<br>Flooring</p>
+                                <p class="s-text" style="color:black;margin-top:10px;margin-left:20px;
+                                font-size: 12px;
+                                ">For Mezzanine flooring 15mm
+                                    Everest HD boards
                                     provide reliable
-                                    moisture resistance<br>due to their low moisture content.</p>
+                                    moisture resistance due to their low moisture content.</p>
+                                <div class="small-img-holder" style="height: 95px;
+                                width: 170px;
+                                background-color: #D9D9D9;
+                                text-align: center;
+                                padding-top: 10px;
+                                padding-bottom: 10px;margin-left:150px;"><img
+                                        src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127554/Emailer/3_ikx5ft.png"
+                                        alt="" height="75px">
+                                    <p style="font-size:9px;margin-top:2px;">HEAVY DUTY MEZZANINE FLOOR</p>
+                                </div>
                             </div>
+                            <div class="img-holder-2" style="background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127559/Emailer/2_vovjjw.png);
+                        width: 320px;
+                        height: 250px;
+                        z-index: 0;
+                        bottom: 0;
+                        background-size: 100%;
+                        margin-top: 45px;
+    margin-left: 25px;"></div>
                         </div>
-                        <div class="img-holder-2"></div>
-                        <div class="small-img-holder"><img
-                                src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127554/Emailer/3_ikx5ft.png"
-                                alt="" height="75px">
-                            <p style="font-size:9px;margin-top:2px;">HEAVY DUTY MEZZANINE FLOOR</p>
-                        </div>
+
+
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class="white-bg-2">
-                        <div class="img-holder-3"></div>
-                        <div class="green-bg-2">
+                    <div class="white-bg-2" style="height: 425px;
+                    background-color: white;">
+                        <div class="img-holder-3" style="width: 365px;
+                        background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127553/Emailer/image_bg_fclhgs.jpg);
+                            height: 425px; background-position: bottom right; float: left;"></div>
+                        <div class="green-bg-2" style="background-color: #0F9386;
+                        height: 425px;
+                        z-index: 1;
+                        width: 210px;
+                        display: table-cell;
+                        vertical-align: middle;">
                             <div>
-                                <p class="title">Wall Lining</p><br>
-                                <p class="s-text">In Wall Lining, the application of
+                                <p class="title" style="color: white;
+                                margin-top: 0;margin-bottom: 0;
+                                font-size: 45px;
+                                letter-spacing: 1.5px;
+                                line-height: 38px;
+                                margin-left: 20px;
+                                font-weight: 100">Wall Lining</p><br>
+                                <p class="s-text" style="color: white;margin-top:0;margin-bottom:0;
+                                font-size: 12px;
+                                margin-left: 20px;">In Wall Lining, the application of
                                     12 mm Everest HD boards created a secure inner construction.</p>
                             </div>
                         </div>
@@ -334,20 +144,55 @@
             </tr>
             <tr>
                 <td>
-                    <div class="white-bg-4">
-                        <div class="img-holder-bg-4"></div>
-                        <div class="blue-bg-4">
+                    <div class="white-bg-4" style="height: 505px;">
+                        <div class="img-holder-bg-4" style="height: 372px;
+                        width: 515px;
+                        z-index: 0;
+                        background-image: url(https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127553/Emailer/image_4_bvp4z8.jpg);
+                        background-size: 100%;
+                        margin-left: auto;
+                        margin-top: 45px;"></div>
+                        <div class="blue-bg-4" style="background-color: #095169;
+                        height: 245px;
+                        width: 204px;
+                        z-index: 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 20px;
+                        margin-top: -417px;">
                             <div>
-                                <p class="title">Roof Tile Underlay</p><br>
-                                <p class="s-text">For Roof tile Underlay,12MM Everest Boards were used that accentuated
+                                <p class="title" style="color: white;margin-top: 0;margin-bottom: 0;
+                                font-size: 40px;
+                                letter-spacing: 1.5px;
+                                line-height: 38px;
+                                margin-left: 20px;
+                                font-weight: 100">Roof Tile Underlay</p><br>
+                                <p class="s-text" style="color: white;margin-top:0;margin-bottom:0;
+                                font-size: 12px;
+                                margin-left: 20px;">For Roof tile Underlay,12MM Everest Boards were used that
+                                    accentuated
                                     the resort's outer look and created an inviting ambience</p>
                             </div>
                         </div>
-                        <div class="square-grey-box"></div>
-                        <div class="img-holder-4"><img
+                        <div class="square-grey-box" style="background-color: #C6C6C6;
+                        height: 95px;
+                        width: 95px;
+                        z-index: 1;
+                        margin-left: auto;
+                        margin-top: -295px;"></div>
+                        <div class="img-holder-4" style="height: 125px;
+                        width: 385px;
+                        background-color: #F1E6D6;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        float: right;
+                        margin-top: 305px;"><img
                                 src="https://res.cloudinary.com/unicoconnectanurag/image/upload/v1630127553/Emailer/wood_ofdu0v.png"
                                 alt="" height="80px" width="350px">
-                            <h6>ROOFING SINGLES FIXING DETAILS</h6>
+                            <h6 style="margin-top:0;margin-bottom:0">ROOFING SINGLES FIXING DETAILS</h6>
                         </div>
                     </div>
                 </td>
@@ -355,18 +200,46 @@
             <!-- Section Five -->
             <tr>
                 <td>
-                    <div class="footer">
-                        <div class="col-blue">Reimagine Spaces With Us</div>
-                        <div class="col">
+                    <div class="footer" style=" background-color: #0F9386;
+                    height: 70px;
+                    position: relative;
+                    padding: 50px 20px;">
+                        <div class="col-blue" style="background-color: #095169;
+                        height: 45px;
+                        width: 320px;
+                        transform: translateX(-50%);
+                        margin-left: 48%;
+                        font-weight: bolder;
+                        color: white;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Arial, Helvetica, serif;
+                        letter-spacing: 1px;
+                        margin-top: -72px;">Reimagine Spaces With Us</div>
+                        <div class="col" style="width: 30%;
+                        float: left;
+                        color: white;
+                        padding: 0px;
+                        margin-top: 15px;">
                             <small style="font-size:12px;">EVEREST INDUSTRIES LIMITED</small>
                             <small style="font-size:12px;font-weight:bolder;">everestind.com</small>
                         </div>
-                        <div class="col">
+                        <div class="col" style="width: 34%;
+                        float: left;
+                        color: white;
+                        padding: 0px;
+                        margin-top: 15px;">
                             <small style="font-size:14px;">Everest Technopolis,<br>D-206,
                                 Sector-63,<br>Noida-201301,Uttar Pradesh,<br>INDIA</small>
 
                         </div>
-                        <div class="col">
+                        <div class="col" style="width: 34%;
+                        float: left;
+                        color: white;
+                        padding: 0px;
+                        margin-top: 15px;">
                             <small style="font-size:15px;">Helpline:<a href="tel:18004191991"
                                     style="color: white;text-decoration: none;"> &nbsp;
                                     1800
