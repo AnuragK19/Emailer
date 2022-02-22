@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Showfest</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto");
+        /*
+        div.image {
+            background: url(http://dev.firsteconomy.com/all-emailer/showfest/08-02-2021/watermark.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        div.transparentbox {
+            margin: 30px 50px;
+            background-color: #FFFFFF;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+*/
+    </style>
+</head>
+
+<body style="margin: 0 auto; width: 650px">
+    <style>
+        * {
+            margin: 0
+        }
+    </style>
+    <div class="image" style="
+        background: url(${aws}/img/watermark.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        width: 650px;
+        background-size: 70% auto;
+        object-fit: cover;
+        object-position: center top;
+      ">
+        <div class="transparentbox" style="background-color: transparent; margin: 0 auto; width: 650px">
+            <table width="650" style="
+            margin: 0 auto;
+            border: 0;
+            background-color: transparent;
+            border: 3px solid black;
+            border-collapse: collapse;
+            color: #b3b3b3;
+          ">
+                <tr>
+                    <td style="
+                padding: 25px 30px;
+                text-align: center;
+                border-bottom: 1px solid #797979;
+                background-color: #22262c;
+              ">
+                        <img style="width: 200px" src="https://www.showfest.com/images/logo.png" />
+                    </td>
+                </tr>
+                <!-- Email body starts here -->
+                <tr>
+                    <td>
+                        <table style="padding: 0px 30px" width="100%">
+                            <tr>
+                                <td>
+                                    <p style="margin: 10px 0">
+                                        Booking ID:<strong>SF-ABCDE1234</strong>
+                                    </p>
+                                    <img src="https://picsum.photos/250/170" style="border-radius: 8px" />
+                                </td>
+                                <td style="
+                      vertical-align: middle;
+                      color: black;
+                      padding-bottom: 10px;
+                    ">
+                                    <p style="margin: 15px 0 10px 0">
+                                        <img src="" /> <strong>Rewind</strong>
+                                    </p>
+                                    <p style="margin: 0 0 10px 0">
+                                        <img src="" />
+                                        <strong>Dallas Curtis Culwell Centre</strong>
+                                    </p>
+                                    <p style="margin: 0 0 10px 0">
+                                        <img src="" /> <strong>18 March 2022</strong> Sunday
+                                    </p>
+                                    <p style="margin: 0 0 10px 0">
+                                        <img src="" /> <strong>8 PM</strong>
+                                    </p>
+                                    <p style="margin: 0 0 10px 0">
+                                        <img src="" /> <strong>04 </strong>No. of guests
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <hr style="border: 1px dashed #A9ABAD;margin:30px 0" />
+                                </td>
+
+                            </tr>
+
+                            <!-- Ticket part goes here -->
+                            <tr>
+                                <td colspan="2">
+                                    <div
+                                        style="background-color: #F6F6F6;width:51%;float:left;border-top-left-radius:8px;border-bottom-left-radius:8px;padding:15px;border-right:1px dashed grey">
+                                        <small style="margin:0">Subscriber: Platinum Premium</small>
+                                        <h4 style="color:red;margin-top: 7px;">John Smith</h4>
+                                        <h5 style="padding-bottom: 8px;border-bottom:1px solid #D8D8D9;">ID:
+                                            SBCDE1234
+                                        </h5>
+                                        <table width="100%" style="margin:10px 0 0 0;color:black">
+                                            <tr>
+                                                <td><img class="mb-1" height="25" style="margin:5px auto;"
+                                                        src="https://showfest-prod-bucket.s3.amazonaws.com/emailers/Event.svg" />
+                                                    <h6>Rewind</h6>
+                                                </td>
+                                                <td><img class="mb-1" height="25" style="margin:5px auto;"
+                                                        src="https://showfest-prod-bucket.s3.amazonaws.com/emailers/Time.svg" />
+                                                    <h6>8PM</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="mb-1" height="25" style="margin:5px auto;"
+                                                        src="https://showfest-prod-bucket.s3.amazonaws.com/emailers/Calender.svg" />
+                                                    <h6>18th March 2022</h6>
+                                                </td>
+                                                <td><img class="mb-1" height="25" style="margin:5px auto;"
+                                                        src="https://showfest-prod-bucket.s3.amazonaws.com/emailers/Location.svg" />
+                                                    <h6>Dallas</h6>
+                                                    <small>Curtis Culwell Center</small>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div
+                                        style="background-color: #F6F6F6;width:29%;float:left;padding:15px;text-align:center;position: relative;height:208px">
+                                        <div style="position: absolute;
+                                        top: 10px;
+                                        left: 0;
+                                        transform: translate(-50%, -50%) rotate(180deg);
+                                        height: 20px;
+                                        width: 40px;
+                                        border-radius: 150px 150px 0 0;
+                                        background-color: #fff;"></div>
+                                        <div style="position: absolute;
+                                        bottom: -10px;
+                                        left: 0;
+                                        transform: translate(-50%, -50%);
+                                        height: 20px;
+                                        width: 40px;
+                                        border-radius: 150px 150px 0 0;
+                                        background-color: #fff;"></div>
+
+                                        <h5 style="margin:30px 0 0 0;">John Smith</h5>
+                                        <img src="https://www.emoderationskills.com/wp-content/uploads/2010/08/QR2.jpg"
+                                            alt="" height="80" style="margin: 3px 0;">
+                                        <h5>ID: ABCDSF1</h5>
+
+                                        <table width="100%" style="margin:0;color:black">
+                                            <tr>
+                                                <td>
+                                                    <p>Section</p>
+                                                    <p>109</p>
+                                                </td>
+                                                <td>
+                                                    <p>Row</p>
+                                                    <p>08</p>
+                                                </td>
+                                                <td>
+                                                    <p>Spot</p>
+                                                    <p>03</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    <div
+                                        style=" background-color:
+                                            #FFD700;width:3.68%;float:left;color:white;white-space:
+                                            nowrap;text-align:center;border-bottom-right-radius:8px;border-top-right-radius:8px;margin:0
+                                            0 20px 0;padding:15px 15px 15px 15px;font-weight:bold;height:208px;writing-mode: vertical-lr;display:flex;justify-content:center">
+                                        <p>Platinum Premium Plus</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Red footer starts here -->
+                            <tr>
+                                <td colspan="2" style="
+                      background-color: #f10607;
+                      color: white;
+                      border-bottom-left-radius: 8px;
+                      border-bottom-right-radius: 8px;
+                    ">
+                                    <div style="margin: 10px auto; padding: 10px 30px">
+                                        <p>
+                                            Enjoy the spectacular bollywood experience with ShowFest
+                                            !
+                                        </p>
+                                        <h3 style="margin:15px 0">We're glad you're here,</h3>
+                                        <p>The Showfest team</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Red footer part ends here -->
+                        </table>
+                    </td>
+                </tr>
+                <!-- Social media icons goes here -->
+
+                <tr>
+                    <td style="
+                padding: 10px 20px;
+                text-align: center;
+                line-height: 22px;
+                margin-top: 30px;
+              ">
+                        <p style="
+                  font-size: 14px;
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  color: #b3b3b3;
+                  margin-bottom: 5px;
+                ">
+                            @ 2022 ShowFest LLC
+                            <br />
+                        </p>
+                        <p style="
+                  font-size: 16px;
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  color: #b3b3b3;
+                ">
+                            <a style="color: #b3b3b3; text-decoration: none" href=" ">FAQ</a>
+                            |
+                            <a style="color: #b3b3b3; text-decoration: none"
+                                href="https://partners.showfest.com/terms_and_conditions" target="_blank">Terms &
+                                Conditions</a>
+                            |
+                            <a style="color: #b3b3b3; text-decoration: none"
+                                href="https://partners.showfest.com/privacy_policy" target="_blank">Privacy Policy</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 20px; text-align: center; line-height: 22px">
+                        <p style="
+                  font-size: 14px;
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  color: #b3b3b3;
+                ">
+                            This is an auto-generated email. Please do not reply. <br />
+                            You received this email because you have filled the form at
+                            <a style="color: #b3b3b3" href="https://partners.showfest.com" target="_blank">ShowFest
+                                LLC</a>.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; text-align: left; line-height: 22px"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 0px 10px 20px; border-top: 5px solid #f10607">
+                        <h4 style="
+                  font-size: 14px;
+                  font-weight: 700;
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                ">
+                            Disclaimer
+                        </h4>
+                        <p style="
+                  font-size: 14px;
+                  font-family: 'Roboto', sans-serif;
+                  margin: 0;
+                  line-height: 22px;
+                  padding-top: 5px;
+                ">
+                            Contents of this e-mail and any files transmitted along with it
+                            may contain confidential and privileged information and are for
+                            the sole use of the addressee indicated in this mail. If you are
+                            not the indicated addressee or have received this communication
+                            in error, kindly notify the sender by reply e-mail or call
+                            immediately and destroy this e-mail and any attachments
+                            permanently. Also, any dissemination, use, review, distribution,
+                            printing or copying of the information contained in this e-mail
+                            and/or attachments to it are strictly prohibited.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
